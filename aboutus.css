@@ -1,0 +1,42 @@
+#para
+{
+	color: red;
+	font-size: 20px;
+}
+#head
+{
+	color:yellow;
+    position:top;
+	font-size:40px;
+}
+
+#ab
+{
+	font-family: italic;
+	font-size: 18px;
+	color: yellow;
+}
+#abz
+{
+	font-family: italic;
+	font-size: 18px;
+	color: yellow;
+	
+}
+
+#table
+{ 
+   padding-left:280px;
+   
+}
+#ajeet
+{
+	font-family: italic;
+	font-size: 18px;
+	color: yellow;
+}
+
+#table2
+{
+	padding-right: 280px;
+}

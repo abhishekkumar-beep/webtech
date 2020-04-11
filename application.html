@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script>  
+window.onload=function(){getTime();}
+function getTime(){  
+var today=new Date();  
+var h=today.getHours();  
+var m=today.getMinutes();  
+var s=today.getSeconds();  
+// add a zero in front of numbers<10  
+m=checkTime(m);  
+s=checkTime(s);  
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;  
+setTimeout(function(){getTime()},1000);  
+}  
+//setInterval("getTime()",1000);//another way  
+function checkTime(i){  
+if (i<10){  
+  i="0" + i;  
+ }  
+return i;  
+}  
+</script>  
+    </head>
+    <body bgcolor="tan" style="">
+       <h3 align="left" style="background-color:blueviolet;color:whitesmoke "> Current Time: <span id="txt"></span> </h3>
+        <center>
+        <h1 STYLE="color: white;font-size:40px; background-color: #33A1C9 " >BASIC INFORMATION FORM</H1>
+        <hr style="color:blue;background-color: greenyellow;width:800px">
+        <hr style="color:blue;background-color: greenyellow">
+        <HR style="text-decoration: blink ; background-color:red ;  border: 1px solid red;width: 1000px"/>
+        </center>
+       <form METHOD="POST" ACTION="appliaction.jsp">
+           <table  width="70%" ALIGN="CENTER" CELLPADDING="50" BGCOLOR="#8E8D8A" style="box-shadow: 60px -16px teal, 10px 5px 5px red, 12px 12px 2px 1px rgba(0, 0, 255, .2), 3px 3px red, -1em 0 .4em olive;border-style: dotted;border-color:red">
+               <tr>
+                   <td>
+                      <H1 style="font-style: italic"> ENTER YOUR FIRST NAME</H1>
+                       
+                   </td>
+                    <td>
+                        <INPUT TYPE="TEXT" NAME="w1" placeholder="Enter Your First Name...." required maxlength=30 style=" background-color: greenyellow ; font-size: 30PX; width : 100%; SIZE:35; border-radius: 25px;height: 50px;border: 2px solid red" >
+                       
+                   </td>
+                  
+                </tr>
+                <TR>
+                    <TD>
+                       <H1 style="font-style: italic"> ENTER YOUR LAST NAME</H1>
+                    </TD>
+                    <TD>
+                         <INPUT TYPE="TEXT" NAME="w2" placeholder="Enter Your Last Name...." required maxlength=30 style=" background-color: gold;border: 2px solid red; font-size: 30PX; width : 100%; SIZE:35; border-radius: 25px;height: 50px">
+                    </TD>
+                </TR> 
+                 <TR>
+                     <TD>
+                        <H1 style="font-style: italic"> ENTER YOUR FATHER NAME</H1>
+                     </TD>
+                     <TD>
+                          <INPUT TYPE="TEXT" NAME="w3" placeholder="Enter Your Father's Name...." required maxlength=30 style=" background-color: red ;border: 2px solid red ;font-size: 30PX; width : 100%; SIZE:35; border-radius: 25px;height: 50px" >
+                     </TD>
+                </TR>   
+                 <TR>
+                     <TD>
+                          <H1 style="font-style: italic">ENTER YOUR AADHAR NUMBER</H1>
+                     </TD>
+                     <TD>
+                         <INPUT TYPE="text" NAME="w4" placeholder="Enter Your Adhar Number..."  required maxlength=12 style=" background-color: skyblue ; border: 2px solid red ; font-size: 30PX; width : 100%; SIZE:35; border-radius: 25px;height: 50px"> 
+                     </TD>
+                </TR>   
+                 <TR>
+                     <TD>
+                       <H1 style="font-style: italic"> ENTER YOUR EMAIL</H1>
+                     </TD>
+                     <TD>
+                         <INPUT TYPE="EMAIL" placeholder="Enter Your Email...." NAME="w5" style=" background-color: green ;width : 100%;border: 2px solid red ; font-size: 20PX;  border-radius:25PX; font-size :30PX;height: 50px">
+                     </TD>
+                </TR>   
+                 <TR>
+                     <TD>
+                         <H1 style="font-style: italic"> ENTER YOUR CITY</H1>
+                     </TD>
+                     <TD>
+                         <INPUT TYPE="TEXT" NAME="w6" placeholder="Enter Your City...." required maxlength=30  style=" background-color: greenyellow ;width : 100%; SIZE:35;border: 2px solid red ; border-radius: 25px;height: 50px;font-size: 30PX;">
+                     </TD>
+                </TR>   
+                <TR>
+                    <TD>
+                        <H1 style="font-style: italic"> ENTER YOUR STATE</H1>
+                    </TD>
+                    <TD>
+                         <H1><INPUT TYPE="TEXT" NAME="w7" placeholder="Enter Your State...." required maxlength=30 style=" background-color: orange ;width : 100%; SIZE:35;border: 2px solid red ; border-radius: 25px;height: 50px ; font-size: 30PX; border-radius: 25px;"></H1>
+                    </TD>
+                </TR>   
+                     
+             <TR>
+                    <TD> <H1>ENTER THE VEHICLE TYPE</H1></TD>
+                    <TD>
+                        <SELECT style="background-color: red ;width : 100%; SIZE:35; height: 50px ; font-size: 25PX; border-radius: 25px;">
+                            <OPTION SELECTED style="background-color:skyblue">TWO WHEELER</OPTION>
+                            <OPTION style="background-color:yellow">THREE WHEELER</OPTION>
+                            <OPTION style="background-color:greenyellow">FOUR WHEELER</OPTION>
+                             <OPTION>OTHERS</OPTION>
+                        </select>
+                    </TD>
+                </TR>   
+                     
+             
+                     
+             
+               
+           </table>
+          <CENTER> <INPUT TYPE="SUBMIT" VALUE="SUBMIT" STYLE="font-size: 35PX;  box-shadow: 3px 3px red, -1em 0 .4em olive; background-color: red; border-radius: 25PX"><br>
+                    <INPUT TYPE="RESET" VALUE="CLEAR" STYLE="font-size: 35PX;box-shadow: 3px 3px red, -1em 0 .4em olive; background-color: GREEN;border-radius: 25PX">
+          </CENTER>
+        </form>
+    </body>
+</html>
